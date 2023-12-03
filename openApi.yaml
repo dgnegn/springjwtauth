@@ -1,0 +1,13 @@
+openapi : "3.0.2"
+info :
+  title : API Title
+  version : "1.0"
+servers :
+  - url : https://localhost:8080
+paths :
+  / :
+    get:
+      responses:
+        default:
+
+

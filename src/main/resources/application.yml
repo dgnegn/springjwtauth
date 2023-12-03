@@ -1,0 +1,27 @@
+#Database connection
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springJwt
+    username: root
+    password: 6210
+
+  #jpa
+  jpa:
+    hibernate:
+      ddlAuto: update
+      showSql: true
+
+#application properties
+# jwt secretKey
+application:
+  jwt:
+    secretKeyString: 573f6a6a2835785c7a717274502420753f413a5b632239525e7877655f
+
+    # expiration in milliseconds for 7 days
+    expiration: 604800000
+
+    # Authorization header
+    authrorizationHeader: Authorization
+
+    # TokenPrefix
+    tokenPrefix: Bearer
